@@ -1,0 +1,12 @@
+body {
+    margin:0;  
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: -1;
+}
