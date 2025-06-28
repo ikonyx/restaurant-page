@@ -8,6 +8,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#content {
+  display:grid;
+  justify-content: center;
+}
+
 #container {
     display: grid;
     height: 100vh;
@@ -28,11 +33,10 @@ img {
 #txtContainer {
     background-color: rgba(30 30 30 / 20%);
     display: grid;
-    justify-content: center;
-    align-items: center;
     color: white;
-    margin-bottom: 3rem;
+    margin-bottom: 11rem;
     padding: 2rem 0;
+    height: 12rem;
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 
     0px 0px 2px  rgba(0,0,0,1);
@@ -43,11 +47,12 @@ img {
 #homeHeader {
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 1rem;
 }
 
 #homeTxt {
     font-size: 1.4rem;
-    padding: 1.5rem 6rem 0;
+    padding: 0rem 8rem;
 }
 
 nav {
@@ -99,4 +104,76 @@ footer {
 
 a {
     color: white;
+}
+
+#menuContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(30 30 30 / 20%);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 32px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 
+    0px 0px 2px  rgba(0,0,0,1);
+}
+
+#menuHeader {
+  font-family: 'Medieval Sharp';
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  align-self: start;
+}
+
+#menu-nav {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 50px;
+}
+
+#menu-nav button {
+    padding: 0rem 1rem;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+#menu-nav button:hover {
+  background: darkorange;
+}
+
+h2 {
+  font-family: 'Medieval Sharp';
+  font-size: 1.7rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.dish {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.dish h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.dish span {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.dish p {
+  margin: 0.3rem 0 0;
 }
