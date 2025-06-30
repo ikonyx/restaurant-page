@@ -5,7 +5,7 @@ import aboutPage from "./components/Aboutpage.js";
 
 homePage();
 
-function handleTabbing() {
+function handleTabSwitching() {
     const menuBtn = document.querySelector("#menuBtn");
     menuBtn.addEventListener('click', switchToMenu);
 
@@ -32,5 +32,5 @@ function handleTabbing() {
 
 }
 
-handleTabbing();
+handleTabSwitching();
 
