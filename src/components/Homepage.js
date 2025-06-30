@@ -5,6 +5,7 @@ function homePage() {
     const pageContent = document.querySelector('#content')
     const image = document.createElement('img');
     image.src = homepageImg;
+    image.id = "homeImg";
     pageContent.appendChild(image);
 
     const textContainer = document.createElement('div');

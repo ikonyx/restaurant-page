@@ -43,6 +43,7 @@ function menuPage() {
     const pageContent = document.querySelector('#content')
     const image = document.createElement('img');
     image.src = homepageImg;
+    image.id = "homeImg";
     pageContent.appendChild(image);
 
     const menuContainer = document.createElement('div');
