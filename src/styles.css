@@ -108,16 +108,18 @@ a {
 
 #menuContainer {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    height: 70vh;
     color: white;
     background-color: rgba(30 30 30 / 20%);
     backdrop-filter: blur(10px);
     padding: 3rem;
-    margin: 0 25rem;
+    margin: 0 15vw;
     border-radius: 32px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.8), 
     0px 0px 2px  rgba(0,0,0,1);
+    overflow-y: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
 }
 
 #menuHeader {
@@ -125,12 +127,12 @@ a {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  align-self: start;
 }
 
 #menu-nav {
     margin: 15px 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.5rem;
     height: 50px;
@@ -149,6 +151,12 @@ a {
 
 #menu-nav button:hover {
   background: darkorange;
+}
+
+#dishes-content {
+  display: grid;
+  height: 440px;
+  align-items: center;
 }
 
 h2 {
